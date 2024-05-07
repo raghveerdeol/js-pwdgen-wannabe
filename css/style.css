@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(41, 88, 72);
+    color: black
+}
+body > div{
+    animation-name: pass;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+}
+@keyframes pass {
+    0%   {left:50%; top:50%; color: rgb(126, 70, 179);}
+    20%  {left:25%; top:50%; color: (115, 54, 54);}
+    40%  {left:25%; top:5%; color: (66, 132, 66);}
+    60%  {left:75%; top:5%; color: (78, 78, 166);}
+    80% {left:75%; top:50%; color: rgb(229, 229, 102);}
+    100% {left: 50%; right: 50%;color: rgb(239, 172, 172); }
+}
